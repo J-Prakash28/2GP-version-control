@@ -1,0 +1,20 @@
+{
+  "packageDirectories": [
+    {
+      "versionName": "ver 0.3",
+      "versionNumber": "0.3.0.NEXT",
+      "path": "force-app",
+      "default": true,
+      "package": "sample1",
+      "ancestorVersion": "0.2.0",
+      "versionDescription": "Sample first package"
+    }
+  ],
+  "name": "Learning-(Personal-Org)",
+  "namespace": "StudySmart",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "65.0",
+  "packageAliases": {
+    "sample1": "0HodL0000001k5dSAA"
+  }
+}
