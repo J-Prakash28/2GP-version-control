@@ -19,6 +19,8 @@ public class AccountTriggerHandler2 {
         for(Account acc : accList){
             Opportunity opp = new Opportunity();
             opp.Name = 'Test Opportunity';
+            opp.StageName = 'Prospecting';
+            opp.CloseDate = System.today();
             opp.accountId = acc.Id;
             oppList.add(opp);
         }
