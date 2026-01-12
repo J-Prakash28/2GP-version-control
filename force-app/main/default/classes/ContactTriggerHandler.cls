@@ -7,7 +7,6 @@ public class ContactTriggerHandler {
     public static void afterInsert(List<contact> contactList){
         
     }
-    
     public static void updateAccount(List<contact> contactList){
         Set<Id> accountIdSet = new Set<Id>();
         for(Contact con : contactList){

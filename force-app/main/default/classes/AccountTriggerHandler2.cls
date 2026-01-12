@@ -13,19 +13,4 @@ public class AccountTriggerHandler2 {
             acc.Rating = 'Hot';
         }
     }
-
-    public static void createOpportunity(List<Account> accList){
-        List<Opportunity> oppList = new List<Opportunity>();
-        for(Account acc : accList){
-            Opportunity opp = new Opportunity();
-            opp.Name = 'Test Opportunity';
-            opp.StageName = 'Prospecting';
-            opp.CloseDate = System.today();
-            opp.accountId = acc.Id;
-            oppList.add(opp);
-        }
-        if(!oppList.isEmpty()){
-            insert oppList;
-        }
-    }
 }

@@ -13,6 +13,6 @@ public class AccountTriggerHandler2Test {
         insert accountList;
         
         List<Account> accList = [SELECT Id, ParentId FROM Account WHERE ParentId =: acc.Id];
-        System.assertEquals(accList.size(), 5, 'Accounts are inserted Incorrectly');
+        System.assertEquals(accList.size(), 5, 'Accounts inserted Incorrectly');
     }
 }
