@@ -3,6 +3,10 @@ public class ContactTriggerHandler {
         updateAccount(contactList);
         createAccount(contactList);
     }
+
+    public static void afterInsert(List<contact> contactList){
+        
+    }
     
     public static void updateAccount(List<contact> contactList){
         Set<Id> accountIdSet = new Set<Id>();
