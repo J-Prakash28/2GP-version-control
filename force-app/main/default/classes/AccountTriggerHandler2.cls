@@ -1,11 +1,10 @@
 public class AccountTriggerHandler2 {
     public static void beforeInsert(List<Account> accList) {
 		assignAccountValues(accList);
-        createContact(accList);
     }
     
     public static void afterInsert(List<Account> accList){
-        
+        createContact(accList);
     }
     
     public static void assignAccountValues(List<Account> accList){
