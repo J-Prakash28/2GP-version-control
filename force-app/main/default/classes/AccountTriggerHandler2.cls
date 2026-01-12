@@ -4,7 +4,7 @@ public class AccountTriggerHandler2 {
     }
     
     public static void afterInsert(List<Account> accList){
-        createContact(accList);
+        createOpportunity(accList);
     }
     
     public static void assignAccountValues(List<Account> accList){
@@ -14,16 +14,16 @@ public class AccountTriggerHandler2 {
         }
     }
 
-    public static void createContact(List<Account> accList){
-        List<Contact> contactList = new List<Contact>();
+    public static void createOpportunity(List<Account> accList){
+        List<Opportunity> oppList = new List<Opportunity>();
         for(Account acc : accList){
-            Contact con = new Contact();
-            con.LastName = 'Test Contact';
-            con.AccountId = acc.Id;
-            contactList.add(con);
+            Opportunity opp = new Opportunity();
+            opp.LastName = 'Test Opportunity';
+            opp.accountId = acc.Id;
+            contactList.add(opp);
         }
-        if(!contactList.isEmpty()){
-            insert contactList;
+        if(!oppList.isEmpty()){
+            insert oppList;
         }
     }
 }
