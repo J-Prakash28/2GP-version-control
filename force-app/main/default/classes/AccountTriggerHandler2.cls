@@ -18,9 +18,9 @@ public class AccountTriggerHandler2 {
         List<Opportunity> oppList = new List<Opportunity>();
         for(Account acc : accList){
             Opportunity opp = new Opportunity();
-            opp.LastName = 'Test Opportunity';
+            opp.Name = 'Test Opportunity';
             opp.accountId = acc.Id;
-            contactList.add(opp);
+            oppList.add(opp);
         }
         if(!oppList.isEmpty()){
             insert oppList;
