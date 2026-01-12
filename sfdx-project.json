@@ -8,6 +8,14 @@
       "package": "sample1",
       "ancestorVersion": "0.2.0",
       "versionDescription": "Sample first package"
+    },
+    {
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "path": "force-app",
+      "default": false,
+      "package": "pragadeesh",
+      "versionDescription": "First demo package"
     }
   ],
   "name": "Learning-(Personal-Org)",
@@ -15,6 +23,7 @@
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "65.0",
   "packageAliases": {
-    "sample1": "0HodL0000001k5dSAA"
+    "sample1": "0HodL0000001k5dSAA",
+    "pragadeesh": "0HodL00000021rFSAQ"
   }
 }

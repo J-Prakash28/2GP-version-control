@@ -13,4 +13,17 @@ public class AccountTriggerHandler2 {
             acc.Rating = 'Hot';
         }
     }
+
+    public static void createContact(List<Account> accList){
+        List<Contact> contactList = new List<Contact>();
+        for(Account acc : accList){
+            Contact con = new Contact();
+            con.LastName = 'Test Contact';
+            con.AccountId = acc.Id;
+            contactList.add(con);
+        }
+        if(!contactList.isEmpty()){
+            insert contactList;
+        }
+    }
 }
